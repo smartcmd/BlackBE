@@ -3,10 +3,8 @@ plugins {
     id("org.allaymc.gradle.plugin") version "0.2.1"
 }
 
-// TODO: Update the group to yours (should be same to the package of the plugin main class)
-group = "org.allaymc.javaplugintemplate"
-// TODO: Update the description to yours
-description = "Java plugin template for allay server"
+group = "me.daoge.blackbe"
+description = "BlackBE plugin for allay server"
 version = "0.1.0"
 
 java {
@@ -19,20 +17,18 @@ java {
 allay {
     // TODO: Update the api version to the latest
     // You can find the latest version here: https://central.sonatype.com/artifact/org.allaymc.allay/api
-    api = "0.17.0"
+    api = "0.18.0-SNAPSHOT"
 
     plugin {
-        // TODO: Update the entrance when you change your plugin main class
-        // Same to `org.allaymc.javaplugintemplate.JavaPluginTemplate`
-        entrance = ".JavaPluginTemplate"
-        // TODO: Use your handsome name here
-        authors += "YourNameHere"
-        // TODO: Update the website to yours
+        entrance = ".BlackBE"
+        authors += "DaoGe"
         website = "https://github.com/AllayMC/JavaPluginTemplate"
     }
 }
 
 dependencies {
     compileOnly(group = "org.projectlombok", name = "lombok", version = "1.18.34")
+    implementation(group = "com.squareup.okhttp3", name = "okhttp", version = "5.3.2")
+    implementation(group = "com.google.code.gson", name = "gson", version = "2.11.0")
     annotationProcessor(group = "org.projectlombok", name = "lombok", version = "1.18.34")
 }
