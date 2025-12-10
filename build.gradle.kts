@@ -13,11 +13,8 @@ java {
     }
 }
 
-// See also https://github.com/AllayMC/AllayGradle
 allay {
-    // TODO: Update the api version to the latest
-    // You can find the latest version here: https://central.sonatype.com/artifact/org.allaymc.allay/api
-    api = "0.18.0-SNAPSHOT"
+    api = "0.18.0"
 
     plugin {
         entrance = ".BlackBE"
