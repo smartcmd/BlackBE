@@ -5,7 +5,7 @@ plugins {
 
 group = "me.daoge.blackbe"
 description = "BlackBE plugin for allay server"
-version = "0.1.0"
+version = "0.1.1-SNAPSHOT"
 
 java {
     toolchain {
@@ -18,7 +18,7 @@ allay {
 
     plugin {
         entrance = ".BlackBE"
-        authors += "DaoGe"
+        authors += "daoge"
         website = "https://github.com/AllayMC/JavaPluginTemplate"
     }
 }
